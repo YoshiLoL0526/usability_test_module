@@ -32,9 +32,7 @@ class UsabilityTest(models.Model):
             total_principles = len(test.principles)
             good_count = len([principle.rating for principle in test.principles if principle.rating == 'good'])
             
-            if total_principles == 0:
-                test.rating = 'deficient'
-            elif good_count / total_principles > 0.9:  # 90% de principios bien
+            if good_count / total_principles > 0.9:  # 90% de principios bien
                 test.rating = 'excellent'
             elif 0.8 <= good_count / total_principles <= 0.9:  # entre 80% y 90% de principios bien
                 test.rating = 'acceptable'
@@ -43,4 +41,4 @@ class UsabilityTest(models.Model):
             elif 0.2 <= (total_principles - good_count) / total_principles <= 0.3:  # entre 20% y 30% de principios mal o regular
                 test.rating = 'deficient'
             else:
-                test.rating = 'sufficient'
+                test.rating = 'deficient'
