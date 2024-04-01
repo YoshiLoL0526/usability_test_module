@@ -1,2 +1,2 @@
 # usability_test_module
-Módulo de Odoo 17 simple para registrar pruebas de usabilidad en softwares.
+Módulo simple de Odoo 17 para registrar pruebas de usabilidad en softwares.
