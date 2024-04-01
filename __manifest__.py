@@ -4,7 +4,7 @@
     'category': 'Tools',
     'summary': 'Module for managing usability testing in software development',
     'author': 'R&R',
-    'website': 'https://www.yourwebsite.com',
+    'website': 'https://github.com/YoshiLoL0526/usability_test_module',
     'depends': ['base'],
     'data': [
         'views/base_views.xml',
