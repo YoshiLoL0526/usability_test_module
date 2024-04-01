@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menu -->
+    <menuitem id="menu_usability_test_base" name="Pruebas de Usabilidad"/>
+</odoo>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Vista de formulario para el modelo UsabilityPrinciples -->
+        <record id="view_usability_principles_form" model="ir.ui.view">
+            <field name="name">usability.principles.form</field>
+            <field name="model">usability.principles</field>
+            <field name="arch" type="xml">
+                <form string="Usability Principles">
+                    <sheet>
+                        <h2>Formulario de Principios de Usabilidad</h2>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="description"/>
+                            </group>
+                            <group>
+                                <field name="rating"/>
+                                <field name="tests"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Vista de árbol para el modelo UsabilityPrinciples -->
+        <record id="view_usability_principles_tree" model="ir.ui.view">
+            <field name="name">usability.principles.tree</field>
+            <field name="model">usability.principles</field>
+            <field name="arch" type="xml">
+                <tree string="Usability Principles">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="rating"/>
+                    <field name="tests"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Acción de menú para el modelo UsabilityPrinciples -->
+        <record id="action_usability_principles" model="ir.actions.act_window">
+            <field name="name">Usability Principles</field>
+            <field name="res_model">usability.principles</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="menu_usability_principles" name="Principios" parent="menu_usability_test_base" action="action_usability_principles"/>
+    </data>
+</odoo>
