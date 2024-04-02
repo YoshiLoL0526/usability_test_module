@@ -46,16 +46,6 @@ class UsabilityTest(models.Model):
                test.rating = 'deficient'
            else:
                test.rating = 'deficient'
-    
-    @api.constrains('califications')
-    def _check_unique_principles(self):
-        for rec in self:
-            principles = rec.califications.mapped('principle_id')
-            unique_principles = set()
-            for principle in principles:
-                if principle in unique_principles:
-                    raise ValidationError('No se puede insertar el mismo principio de usabilidad más de una vez.')
-                unique_principles.add(principle)
 
     @api.constrains('califications')
     def _check_at_least_one_principle(self):
