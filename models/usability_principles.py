@@ -8,22 +8,9 @@ class UsabilityPrinciples(models.Model):
 
     name = fields.Char('Nombre', required=True)
     description = fields.Text('Descripción')
-    rating = fields.Selection([
-        ('good', 'Bien'),
-        ('regular', 'Regular'),
-        ('bad', 'Mal')
-    ], 'Calificación')
-
-    @api.constrains('rating')
-    def _check_rating_values(self):
-        for record in self:
-            if record.rating not in ['good', 'regular', 'bad']:
-                raise ValidationError("La calificación debe ser 'Bien', 'Regular' o 'Mal'.")
 
     @api.constrains('name')
     def _check_name_length(self):
         for record in self:
             if len(record.name) < 3:
                 raise ValidationError("El nombre debe tener al menos 3 caracteres.")
-
-    tests = fields.Many2one('usability.test', string='Prueba de Usabilidad')

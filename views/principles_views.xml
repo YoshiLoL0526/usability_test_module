@@ -14,10 +14,10 @@
                                 <field name="name"/>
                                 <field name="description"/>
                             </group>
-                            <group>
-                                <field name="rating"/>
-                                <field name="tests"/>
-                            </group>
+                            <!--<group>-->
+                                <!--<field name="rating"/>-->
+                                <!--<field name="tests"/>-->
+                            <!--</group>-->
                         </group>
                     </sheet>
                 </form>
@@ -32,8 +32,8 @@
                 <tree string="Usability Principles">
                     <field name="name"/>
                     <field name="description"/>
-                    <field name="rating"/>
-                    <field name="tests"/>
+                    <!--<field name="rating"/>-->
+                    <!--<field name="tests"/>-->
                 </tree>
             </field>
         </record>

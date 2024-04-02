@@ -12,22 +12,26 @@
             <field name="name">Usability Test Form View</field>
             <field name="model">usability.test</field>
             <field name="arch" type="xml">
-                <form>
+                
+                <form string="Pruebas">
                     <sheet>
-                        <h2>Formulario de Pruebas de Usabilidad</h2>
                         <group>
-                            <group>
-                                <field name="name"/>
-                                <field name="description"/>
-                            </group>
-                            <group>
-                                <field name="date"/>
-                                <!-- El campo rating no se muestra en el formulario ya que se calculará automático -->
-                                <!-- <field name="rating"/> -->
-                                <field name="specialists"/>
-                                <field name="recommendations"/>
-                            </group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="date"/>
+                            <field name="specialists"/>
+                            <field name="recommendations"/>
                         </group>
+                        <notebook>
+                            <page string="Principios y Calificaciones">
+                                <field name="califications" widget="one2many_list">
+                                    <tree editable="bottom">
+                                        <field name="principle_id"/>
+                                        <field name="calification"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
