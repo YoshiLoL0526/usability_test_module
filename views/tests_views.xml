@@ -12,7 +12,6 @@
             <field name="name">Usability Test Form View</field>
             <field name="model">usability.test</field>
             <field name="arch" type="xml">
-                
                 <form string="Pruebas">
                     <sheet>
                         <group>

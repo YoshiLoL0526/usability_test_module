@@ -1,0 +1,51 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Define los principios de usabilidad -->
+        <record id="principle_visibility" model="usability.principles">
+            <field name="name">Visibilidad del estado del sistema</field>
+            <field name="description">El sistema debe mantener al usuario informado sobre el estado actual de las operaciones.
+            </field>
+        </record>
+        <record id="principle_match_real_world" model="usability.principles">
+            <field name="name">Correspondencia entre el sistema y el mundo real</field>
+            <field name="description">El sistema debe hablar el lenguaje del usuario, con palabras, frases y conceptos que le sean familiares.
+            </field>
+        </record>
+        <record id="principle_control_freedom" model="usability.principles">
+            <field name="name">Control y libertad del usuario</field>
+            <field name="description">Los usuarios deben poder revertir las acciones que han tomado accidentalmente y salir de un proceso en cualquier momento.
+            </field>
+        </record>
+        <record id="principle_consistency_standards" model="usability.principles">
+            <field name="name">Consistencia y estándares</field>
+            <field name="description">El sistema debe ser consistente en su diseño y terminología.</field>
+        </record>
+        <record id="principle_error_catch" model="usability.principles">
+            <field name="name">Prevención de errores</field>
+            <field name="description">Se debe diseñar el sistema para minimizar la posibilidad de errores.</field>
+        </record>
+        <record id="principle_recognition_before_remember" model="usability.principles">
+            <field name="name">Reconocimiento antes que recuerdo</field>
+            <field name="description">Los usuarios deben poder encontrar fácilmente lo que necesitan sin tener que recordar información.
+            </field>
+        </record>
+        <record id="principle_flexibility_efficiency" model="usability.principles">
+            <field name="name">Flexibilidad y eficiencia de uso</field>
+            <field name="description">El sistema debe poder ser utilizado tanto por usuarios noveles como por expertos.
+            </field>
+        </record>
+        <record id="principle_design" model="usability.principles">
+            <field name="name">Diseño estético y minimalista</field>
+            <field name="description">El diseño debe ser sencillo y limpio, evitando información superflua.</field>
+        </record>
+        <record id="principle_help" model="usability.principles">
+            <field name="name">Ayuda al usuario</field>
+            <field name="description">El sistema debe proporcionar ayuda y documentación clara y concisa.</field>
+        </record>
+        <record id="principle_error_recognition" model="usability.principles">
+            <field name="name">Reconocimiento de errores</field>
+            <field name="description">Los mensajes de error deben ser claros y fáciles de entender, ofreciendo soluciones prácticas.
+            </field>
+        </record>
+    </data>
+</odoo>

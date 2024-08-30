@@ -1,0 +1,465 @@
+<odoo>
+    <data noupdate="1">
+
+        <!-- Prueba de usabilidad para el módulo de Inventario -->
+        <record id="prueba_inventario_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Inventario</field>
+            <field name="description">Evaluar la efectividad del módulo de Inventario en la gestión de stock y productos.</field>
+            <field name="date">2023-12-05</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Incorporar un sistema de alertas más visible para las existencias críticas.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Inventario -->
+        <record id="calification_inventario_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_inventario_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_inventario_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_inventario_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_inventario_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_inventario_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_inventario_design" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_demo"/>
+            <field name="principle_id" ref="principle_design"/>
+            <field name="calification">good</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Contabilidad -->
+        <record id="prueba_contabilidad_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Contabilidad</field>
+            <field name="description">Evaluar la funcionalidad del módulo de Contabilidad en la gestión de finanzas.</field>
+            <field name="date">2023-12-10</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Simplificar la creación de informes financieros para usuarios no contables.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Contabilidad -->
+        <record id="calification_contabilidad_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_contabilidad_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_contabilidad_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_contabilidad_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_contabilidad_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_contabilidad_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_contabilidad_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_contabilidad_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_contabilidad_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_contabilidad_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_contabilidad_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_contabilidad_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_contabilidad_design" model="usability.califications">
+            <field name="test_id" ref="prueba_contabilidad_demo"/>
+            <field name="principle_id" ref="principle_design"/>
+            <field name="calification">bad</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Recursos Humanos -->
+        <record id="prueba_rrhh_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Recursos Humanos</field>
+            <field name="description">Evaluar la facilidad de uso del módulo de RRHH para la gestión de empleados y nómina.</field>
+            <field name="date">2023-12-15</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Añadir más opciones de filtrado en la gestión de empleados y mejorar la integración con otros módulos.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de RRHH -->
+        <record id="calification_rrhh_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_rrhh_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_rrhh_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_rrhh_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_rrhh_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_rrhh_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_rrhh_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_rrhh_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_rrhh_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_rrhh_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_rrhh_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_rrhh_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_rrhh_flexibility_efficiency" model="usability.califications">
+            <field name="test_id" ref="prueba_rrhh_demo"/>
+            <field name="principle_id" ref="principle_flexibility_efficiency"/>
+            <field name="calification">regular</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Proyectos -->
+        <record id="prueba_proyectos_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Proyectos</field>
+            <field name="description">Evaluar cómo el módulo de Proyectos facilita la planificación y seguimiento de tareas.</field>
+            <field name="date">2023-12-20</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Agregar gráficos más intuitivos para el seguimiento del progreso de los proyectos.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Proyectos -->
+        <record id="calification_proyectos_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_proyectos_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_proyectos_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_proyectos_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_proyectos_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_proyectos_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_proyectos_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_proyectos_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_proyectos_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_proyectos_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_proyectos_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_proyectos_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_proyectos_flexibility_efficiency" model="usability.califications">
+            <field name="test_id" ref="prueba_proyectos_demo"/>
+            <field name="principle_id" ref="principle_flexibility_efficiency"/>
+            <field name="calification">regular</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Fabricación -->
+        <record id="prueba_fabricacion_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Fabricación</field>
+            <field name="description">Evaluar la capacidad del módulo de Fabricación para gestionar órdenes de trabajo.</field>
+            <field name="date">2023-12-25</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Mejorar la visualización del flujo de trabajo para evitar errores de producción.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Fabricación -->
+        <record id="calification_fabricacion_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_fabricacion_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_fabricacion_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_fabricacion_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_fabricacion_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_fabricacion_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_fabricacion_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_fabricacion_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_fabricacion_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_fabricacion_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_fabricacion_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_fabricacion_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_fabricacion_design" model="usability.califications">
+            <field name="test_id" ref="prueba_fabricacion_demo"/>
+            <field name="principle_id" ref="principle_design"/>
+            <field name="calification">good</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Ventas -->
+        <record id="prueba_ventas_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Ventas</field>
+            <field name="description">Evaluar la eficiencia del módulo de Ventas en la creación y gestión de cotizaciones y órdenes de venta.</field>
+            <field name="date">2023-12-30</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Optimizar la velocidad de carga de las cotizaciones y agregar más plantillas predefinidas.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Ventas -->
+        <record id="calification_ventas_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_ventas_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_ventas_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_ventas_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_ventas_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_ventas_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_ventas_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_ventas_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_ventas_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_ventas_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_ventas_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_ventas_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_ventas_flexibility_efficiency" model="usability.califications">
+            <field name="test_id" ref="prueba_ventas_demo"/>
+            <field name="principle_id" ref="principle_flexibility_efficiency"/>
+            <field name="calification">good</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Marketing -->
+        <record id="prueba_marketing_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Marketing</field>
+            <field name="description">Evaluar cómo el módulo de Marketing permite gestionar campañas de manera efectiva.</field>
+            <field name="date">2024-01-05</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Agregar opciones avanzadas para segmentar audiencias y automatizar tareas repetitivas.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Marketing -->
+        <record id="calification_marketing_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_marketing_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_marketing_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_marketing_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_marketing_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_marketing_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_marketing_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_marketing_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_marketing_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_marketing_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_marketing_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_marketing_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_marketing_flexibility_efficiency" model="usability.califications">
+            <field name="test_id" ref="prueba_marketing_demo"/>
+            <field name="principle_id" ref="principle_flexibility_efficiency"/>
+            <field name="calification">regular</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Compras -->
+        <record id="prueba_compras_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Compras</field>
+            <field name="description">Evaluar cómo el módulo de Compras maneja la adquisición de bienes y servicios.</field>
+            <field name="date">2024-01-10</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Mejorar la integración con proveedores externos para simplificar el proceso de compra.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Compras -->
+        <record id="calification_compras_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_compras_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_compras_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_compras_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">regular</field>
+        </record>
+        <record id="calification_compras_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_compras_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_compras_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_compras_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_compras_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_compras_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_compras_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_compras_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_compras_flexibility_efficiency" model="usability.califications">
+            <field name="test_id" ref="prueba_compras_demo"/>
+            <field name="principle_id" ref="principle_flexibility_efficiency"/>
+            <field name="calification">regular</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de CRM -->
+        <record id="prueba_crm_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de CRM</field>
+            <field name="description">Evaluar la funcionalidad del módulo de CRM para la gestión de relaciones con los clientes.</field>
+            <field name="date">2024-01-15</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Facilitar la integración con herramientas externas de automatización de marketing.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de CRM -->
+        <record id="calification_crm_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_crm_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_crm_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_crm_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_crm_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_crm_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_crm_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_crm_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_crm_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_crm_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_crm_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_crm_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">good</field>
+        </record>
+        <record id="calification_crm_flexibility_efficiency" model="usability.califications">
+            <field name="test_id" ref="prueba_crm_demo"/>
+            <field name="principle_id" ref="principle_flexibility_efficiency"/>
+            <field name="calification">good</field>
+        </record>
+
+        <!-- Prueba de usabilidad para el módulo de Inventario (Caso extremo: mal) -->
+        <record id="prueba_inventario_extremo_mal_demo" model="usability.test">
+            <field name="name">Prueba de usabilidad del módulo de Inventario (Caso extremo: mal)</field>
+            <field name="description">Evaluar el módulo de Inventario bajo condiciones extremas de uso.</field>
+            <field name="date">2024-01-20</field>
+            <field name="specialists" ref="base.user_admin"/>
+            <field name="recommendations">Revisar completamente la arquitectura de interfaz de usuario y optimizar la velocidad de carga.</field>
+        </record>
+
+        <!-- Calificaciones para la prueba de Inventario (Caso extremo: mal) -->
+        <record id="calification_inventario_extremo_mal_visibility" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_extremo_mal_demo"/>
+            <field name="principle_id" ref="principle_visibility"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_inventario_extremo_mal_real_world" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_extremo_mal_demo"/>
+            <field name="principle_id" ref="principle_match_real_world"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_inventario_extremo_mal_control_freedom" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_extremo_mal_demo"/>
+            <field name="principle_id" ref="principle_control_freedom"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_inventario_extremo_mal_consistency_standards" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_extremo_mal_demo"/>
+            <field name="principle_id" ref="principle_consistency_standards"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_inventario_extremo_mal_error_catch" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_extremo_mal_demo"/>
+            <field name="principle_id" ref="principle_error_catch"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_inventario_extremo_mal_recognition_before_remember" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_extremo_mal_demo"/>
+            <field name="principle_id" ref="principle_recognition_before_remember"/>
+            <field name="calification">bad</field>
+        </record>
+        <record id="calification_inventario_extremo_mal_flexibility_efficiency" model="usability.califications">
+            <field name="test_id" ref="prueba_inventario_extremo_mal_demo"/>
+            <field name="principle_id" ref="principle_flexibility_efficiency"/>
+            <field name="calification">bad</field>
+        </record>
+
+    </data>
+</odoo>
